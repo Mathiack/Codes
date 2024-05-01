@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        h1 {    /*box level se quiser botar inline, so colocar:display: inline*/ 
+            background-color: gray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategrey;
+
+            /* pode usar a shorthand-> border: 10px solid darkslategrey;*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* pode usar a shorthand->  padding: 10px(imagine um relógio em sentido horário)*/
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            /* pode usar a shorthand-> margin: 10px (mesmo esquema do padding)*/
+
+            outline-width: 3px;
+            outline-style: dashed;
+            outline-color: red; 
+            /* pode usar a shorthand-> outline: 3px dashed red*/
+
+        }
+        a {/*inline level*/
+            /*display: block deixa em um bloco*/
+            border-color: red;
+            border-style: groove;
+            border-width: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level.</h1>
+    <p>Parágrafos tmb são box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como isso funciona.</p>
+</body>
+</html>

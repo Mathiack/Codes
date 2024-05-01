@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+<style>
+    body {
+        background-color: grey;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+        text-align: center;
+    }
+    header {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px
+    }
+    nav {
+        text-align: center;
+        background-color: rgb(78, 78, 78);
+        box-shadow: 5px 3px 7px black;
+        /*box-shadow: 1px 1px 1px black; deslocamento horizontal, vertical, espalhamento e cor*/
+        }
+    nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    nav > a:hover {
+        text-decoration: underline;
+    }
+    main {
+        background-color: white;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 2px;
+    }
+    article {
+        background-color: lightslategray;
+    }
+    article > aside { /*o sinal de > indica que o aside está dentro do article*/
+        background-color: rgb(139, 139, 139);
+        padding: 0px;
+
+    }
+    footer {
+        background-color: black;
+        color: white;
+        padding: 1px;
+        text-align: center;
+    }
+    footer > p {
+        margin: 3px;
+    }
+    #assuntos {
+        text-align: center;
+        background-color: gray;
+    }
+</style>
+</head>
+<body>
+    <!--<divs> são caixas do tipo "box level" e <spam> são do tipo "inline level"-->
+    <header> <!--cabeçalho-->
+        <h1>Bem vindo ao meu site</h1>
+        <nav> <!--navegação-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--conteudo principal-->
+        <section id="assuntos"> <!--seção-->
+            <p>Esportes Políica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article><!--artigo-->
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet. Qui voluptate magnam aut placeat repellat sit numquam dolorum. Et dolores nisi et assumenda cumque vel molestias aliquam est aspernatur dolorum. Et possimus galisum rem quibusdam soluta et labore voluptate ut ducimus officia nam nostrum modi in atque magnam et omnis ipsum</p>
+                <aside><!--assunto relativo ao artigo, autor, etc-->
+                    <p>Artigo escrito por José da Silva</p>
+                    <br><br>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+    </main>
+    <footer> <!--rodapé: informações sobre quem fez, fontes, etc-->
+        <p>Por Guilherme Mathiack</p>
+    </footer>
+</body>
+</html>

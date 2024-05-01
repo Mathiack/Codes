@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+h1{
+    color: orange;
+    background-color: rgb(204, 118, 57);
+    text-decoration: underline;
+}
+h3{
+    color:darkgoldenrod;
+    background-color:tan
+}
+
+p{
+    text-align: justify;
+}
