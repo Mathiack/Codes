@@ -1,3 +1,4 @@
+package Testes_Sei_La;
 public class Teste_While {
     public static void main(String[] args) {
         int contador = 0; 

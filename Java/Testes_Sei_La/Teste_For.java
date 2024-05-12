@@ -1,3 +1,4 @@
+package Testes_Sei_La;
 public class Teste_For {
     public static void main (String [] args) {
 
