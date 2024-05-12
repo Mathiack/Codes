@@ -1,5 +1,5 @@
-package Orientacao_Obj./*saldo, agencia, numero, titular*/
-public class conta {
+/*saldo, agencia, numero, titular*/
+public class Conta {
     double saldo;
     int agencia;
     int numero;
