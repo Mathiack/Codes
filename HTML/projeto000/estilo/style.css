@@ -59,17 +59,30 @@ section.normal {
 section.imagem {
     background-color: rgb(49, 49, 49);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;/* efeito Parallax */
 
 }
 section.imagem > p {
     width: 400px;
     background-color: rgba(0, 0, 0, 0.199);
 }
-
+section > p {
+    padding-bottom: 2em;
+}
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right bottom;
+}
 footer{
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
 }
-
