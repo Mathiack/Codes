@@ -5,19 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Livros</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        input#inputN, #inputA, #inputI{
-            width: 200px;
-            height: 30px;
-            border-radius: 10px;
-        }
-        input#inputAdd {
-            margin: 10px;
-            width: 70px;
-            height: 30px;
-        }
-        
-    </style>
 </head>
 <body>
     <div class="centralizado">
@@ -25,27 +12,26 @@
             <h1>Adicionar Livro</h1>
         </div>
         <div class="adicionandoLivro">
-            <form action="livro.php" method="post">
-
-                <label for="Nome" id="NomeB">
-                    <b>Nome</b>
+            <form action="biblioteca.php" method="post">
+                <label for="titulo" id="TituloB">
+                    <b>Título</b>
                 </label>
                 <br>
-                <input type="text" id="inputN">
+                <input type="text" name="titulo" id="inputN" required>
                 <br>
 
-                <label for="Autor" id="AutorB">
+                <label for="autor" id="AutorB">
                     <b>Autor</b>
                 </label>
                 <br>
-                <input type="text" id="inputA">
+                <input type="text" name="autor" id="inputA" required>
                 <br>
 
                 <label for="ISBN" id="isbnB">
                     <b>ISBN</b>
                 </label>
                 <br>
-                <input type="text" id="inputI">
+                <input type="text" name="isbn" id="inputI" required>
                 <br>
 
                 <input type="submit" value="Adicionar" id="inputAdd">
