@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Livros</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="centralizado">
+        <div class="titulo">
+            <h1>Adicionar Livro</h1>
+        </div>
+        <div class="adicionandoLivro">
+            <form action="livro.php" method="post">
+
+                <label for="Nome" id="NomeB"><b>Nome</b></label>
+                <br>
+                <input type="text" id="inputN">
+                <br>
+
+                <label for="Autor" id="AutorB">
+                    <b>Autor</b>
+                </label>
+                <br>
+                <input type="text" id="inputA">
+                <br>
+
+                <label for="ISBN" id="isbnB">
+                    <b>ISBN</b>
+                </label>
+                <br>
+                <input type="text" id="inputI">
+                <br>
+
+                <input type="submit" value="Adicionar">
+            </form>
+            <div id="voltarInicio">
+                <a href="index.html">Voltar à página Inicial</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
