@@ -14,19 +14,14 @@ div.centralizado {
     border-radius: 10px;
     text-align: center;
 }
-div#addLivro>a{
-    text-decoration: none;
-    color: black;
+div#addLivro, #verLivros {
     font-size: 20px;
-    background-color: red;
+    background-color:lightskyblue;
     padding: 3px;
     border-radius: 10px;
+    margin: 10px;
 }
-div#verLivros>a{
+div#addLivro>a, #verLivros>a {
     text-decoration: none;
     color: black;
-    font-size: 20px;
-    background-color: red;
-    padding: 3px;
-    border-radius: 10px;
 }

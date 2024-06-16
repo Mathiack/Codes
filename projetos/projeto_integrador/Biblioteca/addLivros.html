@@ -6,9 +6,17 @@
     <title>Adicionar Livros</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        div {
-            
+        input#inputN, #inputA, #inputI{
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
         }
+        input#inputAdd {
+            margin: 10px;
+            width: 70px;
+            height: 30px;
+        }
+        
     </style>
 </head>
 <body>
@@ -19,7 +27,9 @@
         <div class="adicionandoLivro">
             <form action="livro.php" method="post">
 
-                <label for="Nome" id="NomeB"><b>Nome</b></label>
+                <label for="Nome" id="NomeB">
+                    <b>Nome</b>
+                </label>
                 <br>
                 <input type="text" id="inputN">
                 <br>
@@ -38,7 +48,7 @@
                 <input type="text" id="inputI">
                 <br>
 
-                <input type="submit" value="Adicionar">
+                <input type="submit" value="Adicionar" id="inputAdd">
             </form>
             <div id="voltarInicio">
                 <a href="index.html">Voltar à página Inicial</a>
