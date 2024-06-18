@@ -53,7 +53,9 @@
                 return false;
             }
         }
-        /*function listarLivros() {
+
+        
+        function listarLivros() {
             $database = new Conexao(); //nova instancia da conexao
             $db = $database->getConnection(); //tenta conectar
     
@@ -68,6 +70,6 @@
                 $rs = [];
                 return $rs;
             }
-        }*/
+        }
     }
 ?>

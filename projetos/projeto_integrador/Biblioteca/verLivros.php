@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php
+        include "biblioteca.class.php";
+        $b = new Biblioteca();
+        $livro = $b->listarLivros();
+
+
+    ?>
     <div class="centralizado">
         <div class="titulo">
             <table border="1">

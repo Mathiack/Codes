@@ -23,8 +23,8 @@ div#addLivro, #verLivros {
     border-radius: 10px;
     margin: 10px;
 }
-div#addLivro>a, div#verLivros>a#seeBook {
-    text-decoration: none;
+div#addLivro>a, div#verLivros>a {
+    text-decoration: dashed;
     color: white;
 }
 div#voltarInicio > a {
