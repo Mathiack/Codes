@@ -23,7 +23,7 @@ div#addLivro, #verLivros {
     border-radius: 10px;
     margin: 10px;
 }
-div#addLivro>a, div.verLivros>a {
+div#addLivro>a, div#verLivros>a#seeBook {
     text-decoration: none;
     color: white;
 }
