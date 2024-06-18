@@ -23,7 +23,7 @@ div#addLivro, #verLivros {
     border-radius: 10px;
     margin: 10px;
 }
-div#addLivro>a, #verLivros>a {
+div#addLivro>a, div.verLivros>a {
     text-decoration: none;
     color: white;
 }
@@ -37,7 +37,7 @@ div#voltarInicio > a {
 
 
 
-input#inputN, #inputA, #inputI{
+input#inputN, #inputA, #inputI, #inputE{
     width: 200px;
     height: 30px;
     border-radius: 10px;

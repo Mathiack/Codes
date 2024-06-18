@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 18/06/2024 às 00:59
+-- Tempo de geração: 18/06/2024 às 01:34
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -32,7 +32,8 @@ CREATE TABLE `livro` (
   `Nome` varchar(255) DEFAULT NULL,
   `Autor` varchar(255) DEFAULT NULL,
   `ISBN` int(11) DEFAULT NULL,
-  `Editora` varchar(255) DEFAULT NULL
+  `Editora` varchar(255) DEFAULT NULL,
+  `Estado` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
