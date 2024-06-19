@@ -5,32 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ver Livros</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <?php
-        include "biblioteca.class.php";
-        $b = new Biblioteca();
-        $livro = $b->listarLivros();
-
-
-    ?>
     <div class="centralizado">
         <div class="titulo">
             <table border="1">
-                <th id="tituloTable">
-                    Título
-                </th>
-                <th id="autorTable">
-                    Autor
-                </th>
-                <th id="isbnTable">
-                    ISBN
-                </th>
-                <th id="estadoTable">
-                    Estado
-                </th>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Autor</th>
+                        <th>ISBN</th>
+
+                    </tr>
+                    <a href="index.html">voltar</a>
+                </thead>
+                <tbody>
+                    <?php
+                        include "biblioteca.class.php";
+                        $b = new Biblioteca();
+                        $livros = $b->listarLivros();
+                        
+                        foreach ($livros as $livro):
+                    ?>
+                    <tr>
+                        <td><?php echo $livro['Nome']; ?></td>
+                        <td><?php echo $livro['Autor']; ?></td>
+                        <td><?php echo $livro['ISBN']; ?></td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
             </table>
         </div>
     </div>
+   
 </body>
 </html>

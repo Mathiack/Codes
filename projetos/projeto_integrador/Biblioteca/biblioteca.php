@@ -20,7 +20,6 @@
 <?php 
 
     include "biblioteca.class.php";
-    include "conexao.php";
 
     $b = new Biblioteca();
 
@@ -33,8 +32,8 @@
     $editora = $_POST['editoraB'];
     $b->setEditora($editora);
 
-    $b->inserirLivro();
-    $b->listarLivro();
+    $b->inserirLivros();
+    $b->listarLivros();
 
 ?>
 </body>

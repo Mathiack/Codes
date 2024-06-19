@@ -1,6 +1,6 @@
 <?php 
     //include "biblioteca.php";
-    //include "conexao.php";
+    include "conexao.php";
     class Biblioteca {
 
         public $tituloLivro, $autorLivro, $ISBN, $editora, $estado;
@@ -33,7 +33,7 @@
             return $this->editora;
         }
 
-        function inserirLivro() {
+        function inserirLivros() {
             $database = new Conexao(); //nova instancia da conexao
             $db = $database->getConnection(); //tenta conectar
             
@@ -59,12 +59,12 @@
             $database = new Conexao(); //nova instancia da conexao
             $db = $database->getConnection(); //tenta conectar
     
-            $sql = "Select * from livro";
+            $sql = "SELECT * from livro";
     
             try {
-                $stmt = $db->query($sql);
+                $stmt = $db->query($sql);                                                                                                                                                                                                                                                                                                           
                 $rs = $stmt->fetchAll(PDO::FETCH_ASSOC); //rs = result -> resultado  ::::: fetchAll == ecncapsula realizando o processo concatenativo em todos os itens/objetos presentes no ambiente
-                return $rs;
+                return $rs;                          
             } catch(PDOExeption $e) {
                 echo 'Erro ao listar livro(s): ' . $e->getMessage();
                 $rs = [];
