@@ -16,9 +16,10 @@
                         <th>Nome</th>
                         <th>Autor</th>
                         <th>ISBN</th>
+                        <th>Editora</th>
 
                     </tr>
-                    <a href="index.html">voltar</a>
+                    <a href="index.html" id="voltarVerLivros">voltar</a>
                 </thead>
                 <tbody>
                     <?php
@@ -32,6 +33,8 @@
                         <td><?php echo $livro['Nome']; ?></td>
                         <td><?php echo $livro['Autor']; ?></td>
                         <td><?php echo $livro['ISBN']; ?></td>
+                        <td><?php echo $livro['Editora']?></td>
+                        <td><?php echo "<a href='Ops/apagar.php?id=". $livro['ID_Livro']. "'>Apagar</a>"?></td>
                     </tr>
                     <?php endforeach; ?>
                 </tbody>
