@@ -4,6 +4,7 @@
     class Biblioteca {
 
         public $id_Livro, $id_Livro2, $tituloLivro, $autorLivro, $ISBN, $editora, $estado;
+        private $tituloLivroA, $autorLivroA, $ISBNa, $editoraA;
 
         public function setId_Livro($id_Livro) {
             $this->id_Livro = $id_Livro;
@@ -47,11 +48,57 @@
             return $this->editora;
         }
 
+
+
+
+        public function setId_LivroA($id_LivroA) {
+            $this->id_Livro2 = $id_LivroA;
+        }
+        public function getId_LivroA() {
+            return $this->id_Livro2;
+        }
+
+        public function setTituloA($tituloLivroA) {
+            $this->tituloLivroA = $tituloLivroA;
+        }
+        public function getTituloA() {
+            return $this->tituloLivroA;
+        }
+
+        public function setAutorA($autorLivroA) {
+            $this->autorLivroA = $autorLivroA;
+        }
+        public function getAutorA() {
+            return $this->autorLivroA;
+        }
+
+        public function setISBNa($ISBNa) {
+            $this->ISBNa = $ISBNa;
+        }
+        public function getISBNa() {
+            return $this->ISBNa;
+        }
+
+        public function setEditoraA($editoraA) {
+            $this->editoraA = $editoraA;
+        }
+        public function getEditoraA() {
+            return $this->editoraA;
+        }
+
+
+
+
+
+
+
+
+        
         function inserirLivros() {
             $database = new Conexao(); //nova instancia da conexao
             $db = $database->getConnection(); //tenta conectar
             
-            $sql = "INSERT INTO livro (Nome, Autor, ISBN, Editora, Estado) VALUES (:Nome, :Autor, :ISBN, :Editora, :Estado)";
+            $sql = "INSERT INTO livro (Nome, Autor, ISBN, Editora) VALUES (:Nome, :Autor, :ISBN, :Editora)";
             try {
                 $stmt = $db->prepare($sql);
     
@@ -59,11 +106,10 @@
                 $stmt->bindParam(':Autor', $this->autorLivro);
                 $stmt->bindParam(':ISBN', $this->ISBN);
                 $stmt->bindParam(':Editora', $this->editora);
-                $stmt->bindParam(':Estado', $this->estado);
                 $stmt->execute();
                 return true;
-            } catch(PDOExeption $e) { //if(erro==true) {echo $this->mensagem;}
-                echo "Erro ao inserir pessoa: " . $e->getMessage();
+            } catch(PDOException $e) { //if(erro==true) {echo $this->mensagem;}
+                echo "Erro ao inserir livro: " . $e->getMessage();
                 return false;
             }
         }
@@ -79,7 +125,7 @@
                 $stmt = $db->query($sql);                                                                                                                                                                                                                                                                                                           
                 $rs = $stmt->fetchAll(PDO::FETCH_ASSOC); //rs = result -> resultado  ::::: fetchAll == ecncapsula realizando o processo concatenativo em todos os itens/objetos presentes no ambiente
                 return $rs;                          
-            } catch(PDOExeption $e) {
+            } catch(PDOException $e) {
                 echo 'Erro ao listar livro(s): ' . $e->getMessage();
                 $rs = [];
                 return $rs;
@@ -92,10 +138,10 @@
             $db = $database->getConnection(); // tenta conectar
             
             // Obtendo os dados atualizados
-            $tituloLivro = $this->getTitulo();
-            $autorLivro = $this->getAutor();
-            $ISBN = $this->getISBN();
-            $editora = $this->getEditora();
+            $tituloLivro = $this->getTituloA();
+            $autorLivro = $this->getAutorA();
+            $ISBN = $this->getISBNa();
+            $editora = $this->getEditoraA();
             
             
             // Preparando a consulta SQL
@@ -113,7 +159,7 @@
                 return true;
         
             } catch(PDOException $e) { 
-                echo "Erro ao atualizar pessoa: " . $e->getMessage();
+                echo "Erro ao atualizar livro: " . $e->getMessage();
                 return false;
             }
         }
@@ -131,7 +177,7 @@
                 return $stmt->fetch(PDO::FETCH_ASSOC);
     
             } catch(PDOException $e) {
-                echo 'Erro ao buscar pessoa por ID: ' . $e->getMessage(); 
+                echo 'Erro ao buscar livro por ID: ' . $e->getMessage(); 
                 return false;
             }   
         }

@@ -1,12 +1,12 @@
 <?php
-include "../biblioteca.class.php";
+include "biblioteca.class.php";
 
 if(isset($_GET['id'])) {
     $id_Livro = $_GET['id'];
 
     $b = new Biblioteca();
 
-    $livro = $p->getLivroById($id_Livro);
+    $livro = $b->getLivroById($id_Livro);
 
 
     // Verifica se a pessoa existe
@@ -41,9 +41,14 @@ if(isset($_GET['id'])) {
         </body>
         </html>";
     } else {
-        echo "Pessoa não encontrada.";
+        echo "<div id='naoConsta'>
+                Teu livro não constas no Registro.<br>
+                <a href='verLivros.php'>Voltar aos Registros</a>
+                </div>";
     }
 } else {
-    echo "ID não foi fornecido.";
+    echo "<div id='naoTemID'>
+            ID não foi fornecido.
+        </div>";
 }
 ?>

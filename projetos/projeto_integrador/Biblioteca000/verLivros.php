@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ver Livros</title>
     <link rel="stylesheet" href="style.css">
-
+    <style>
+        a#voltarVerLivros {
+            text-decoration: none;
+            padding: 5px;
+            background-color: gray;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="centralizado">
@@ -17,9 +24,7 @@
                         <th>Autor</th>
                         <th>ISBN</th>
                         <th>Editora</th>
-
                     </tr>
-                    <a href="index.html" id="voltarVerLivros">voltar</a>
                 </thead>
                 <tbody>
                     <?php
@@ -41,6 +46,9 @@
                     <?php endforeach; ?>
                 </tbody>
             </table>
+            <div>
+                <a href="index.html" id="voltarVerLivros">Voltar à Tela Inicial</a>
+            </div>
         </div>
     </div>
    
