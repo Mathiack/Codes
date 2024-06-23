@@ -9,21 +9,28 @@
         a#voltarVerLivros {
             text-decoration: none;
             padding: 5px;
-            background-color: gray;
-            border-radius: 10px;
+            color: black;
+        }
+        div#voltaVerLivros {
+            padding: 7px;
+        }
+        table {
+            width: 500px;
         }
     </style>
 </head>
 <body>
     <div class="centralizado">
         <div class="titulo">
-            <table border="1">
+            <table border="2">
                 <thead>
                     <tr>
+                        <!--<th>ID</th>-->
                         <th>Nome</th>
                         <th>Autor</th>
                         <th>ISBN</th>
                         <th>Editora</th>
+                        <th >Operações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,11 +49,12 @@
                         <td><?php echo $livro['ISBN']; ?></td>
                         <td><?php echo $livro['Editora']?></td>
                         <td><?php echo "<a href='Ops/apagar.php?id=". $livro['ID_Livro']. "'>Apagar</a>"?></td>
+                        <td><?php echo "<a href='atualizar.php?id=". $livro['ID_Livro'] ."'>Atualizar</a>"?>
                     </tr>
                     <?php endforeach; ?>
                 </tbody>
             </table>
-            <div>
+            <div id="voltaVerLivros">
                 <a href="index.html" id="voltarVerLivros">Voltar à Tela Inicial</a>
             </div>
         </div>
