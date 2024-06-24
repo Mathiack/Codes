@@ -7,7 +7,7 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(63, 63, 63);
+            background-color: #480001;
         }
         .telaLogin {
             background-color: rgba(0, 0, 0, 0.95);
@@ -16,6 +16,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             padding: 50px;
+            border-radius: 15px;
             color: white;
             text-align: center;
         }
@@ -32,6 +33,7 @@
         .inputBox input{
             text-align: center;
             padding: 15px;
+            border-radius: 10px;
             border: none;
             outline: none;
             width: 100%;
@@ -43,6 +45,7 @@
             border: none;
             padding: 15px;
             width: 116%;
+            border-radius: 10px;
             color: white;
             font-size: 15px;
             transform: translate(-6%, -20%);
@@ -52,21 +55,20 @@
             cursor: pointer;
         }
     </style>
-    
 </head>
 <body>
-    <form action="login.php" method="POST">
+    <form action="testeL.php" method="post">
         <div class="telaLogin">    
             <div class="h1Text">    
                 <h1>Login</h1>
             </div>
             <div class="inputBox">
-                <input type="text" placeholder="E-mail/Nome" name="" required>
+                <input type="text" placeholder="E-mail" name="nome" required>
             </div>
             <div class="inputBox">
-                <input type="password" placeholder="Senha" required>
+                <input type="password" placeholder="Senha" name="senha" required>
             </div>
-            <input type="submit" name="submit" id="submit">
+            <input type="submit" name="submit" value="enviar">
         </div>
     </form>
 </body>
