@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Livros</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        input#inputAdd {
+            border-radius: 10px;
+            color: white;
+            border: 1px solid white;
+            background-color: gray;
+        }
+    </style>
 </head>
 <body>
     <div class="centralizado">
@@ -31,7 +39,7 @@
                     <b>ISBN</b>
                 </label>
                 <br>
-                <input type="text" name="isbn" id="isbn" required>
+                <input type="text" name="isbn" id="isbn">
                 <br>
 
                 <label for="editoraB" id="editoraB">

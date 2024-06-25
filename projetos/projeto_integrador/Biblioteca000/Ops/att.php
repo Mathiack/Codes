@@ -21,7 +21,7 @@
         <link rel='stylesheet' href='../style.css'>
         <style>
             body {
-                background-color: white;
+                
             }
             div.centralizado {
                 position: absolute;
@@ -33,11 +33,19 @@
                 border-radius: 10px;
                 text-align: center;
             }
+            input#atualizarBtn {
+                background-color: gray;
+                color: white;
+                border-radius: 10px;
+                border: 1px solid white;
+                margin: 5px;
+                padding: 5px;
+            }
         </style>
         </head>
             <body>
-                <h2>Atualizar Livro</h2>
                 <div class='centralizado'>
+                    <h2>Atualizar Livro</h2>
                     <form action='slv.php' method='POST'>
                         <input type='hidden' id='id_livro' name='id_livro' value='". $livro['ID_Livro'] ."'>
 
@@ -52,7 +60,7 @@
 
                         <label for='editoraA'>Editora:</label><br>
                         <input type='text' id='editoraA' name='editoraA' value='". $livro['Editora'] ."'><br>
-                        <input type='submit' value='Atualizar'>
+                        <input type='submit' value='Atualizar' id='atualizarBtn'>
                     </form>
                 </div>
             </body>
