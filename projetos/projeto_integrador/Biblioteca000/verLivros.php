@@ -11,10 +11,23 @@
             padding: 5px;
             background-color: gray;
             border-radius: 10px;
-            color: black;
+            color: white;
         }
-        div#voltaVerLivros{
+        div#voltaVerLivros {
             margin-top: 20px;
+        }
+        a.opsTable#atualizar {
+            color: rgb(0, 102, 204);
+            text-decoration: none;
+        }
+        a.opsTable#apagar {
+            color: red;
+            text-decoration: none;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 4px;
         }
     </style>
 </head>
@@ -24,7 +37,7 @@
             <div id="seusLivros">
                 <h1>Livros Adicionados</h1>
             </div>
-            <table border="1">
+            <table>
                 <thead>
                     <tr>
                         <th>Nome</th>
@@ -47,15 +60,15 @@
                         <td><?php echo $livro['Autor']; ?></td>
                         <td><?php echo $livro['ISBN']; ?></td>
                         <td><?php echo $livro['Editora']?></td>
-                        <td><?php echo "<a href='Ops/apagar.php?id=". $livro['ID_Livro']. "'>Apagar</a>"?></td>
-                        <td><?php echo "<a href='att.php?id=". $livro['ID_Livro']. "'>".$livro['ID_Livro'] . "</a>"?></td>
+                        <td><?php echo "<a href='Ops/apagar.php?id=". $livro['ID_Livro']. "' class='opsTable' id='apagar'>Apagar</a>"?></td>
+                        <td><?php echo "<a href='Ops/att.php?id=". $livro['ID_Livro']. "' class='opsTable' id='atualizar'>".$livro['ID_Livro']. "</a>"?></td>
 
                     </tr>
                     <?php endforeach; ?>
                 </tbody>
             </table>
             <div id="voltaVerLivros">
-                <a href="index.html" id="voltarVerLivros">Voltar à Tela Inicial</a>
+                <a href="index.php" id="voltarVerLivros">Voltar à Tela Inicial</a>
             </div>
         </div>
     </div>

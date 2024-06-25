@@ -21,6 +21,14 @@
                 $id_Livro = $_GET['id'];
 
                 $b = new Biblioteca();
+                ?>
+                <style>
+                    div.linkVolta > a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                </style>
+                <?php
 
                 $b->setId_Livro2($id_Livro);
                 echo "<link rel='stylesheet' href='../style.css'>";
@@ -34,7 +42,9 @@
             }
 
         ?>
-        <div class='linkST'><a href='../verLivros.php' id=''>Voltar aos Registros</a></div>
+        <div class='linkVolta'>
+            <a href='../verLivros.php' id=''>Voltar aos Registros</a>
+        </div>
     </div>
 </body>
 </html>
