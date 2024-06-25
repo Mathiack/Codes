@@ -11,12 +11,19 @@
             padding: 5px;
             background-color: gray;
             border-radius: 10px;
+            color: black;
+        }
+        div#voltaVerLivros{
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="centralizado">
         <div class="titulo">
+            <div id="seusLivros">
+                <h1>Livros Adicionados</h1>
+            </div>
             <table border="1">
                 <thead>
                     <tr>
@@ -24,6 +31,7 @@
                         <th>Autor</th>
                         <th>ISBN</th>
                         <th>Editora</th>
+                        <th colspan="2">Operações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,18 +43,18 @@
                         foreach ($livros as $livro):
                     ?>
                     <tr>
-                
-                        <td><?php echo "<a href='atualizar.php?id=". $livro['ID_Livro'] ."'>". $livro['ID_Livro'] ."</a>"?></td>
                         <td><?php echo $livro['Nome']; ?></td>
                         <td><?php echo $livro['Autor']; ?></td>
                         <td><?php echo $livro['ISBN']; ?></td>
                         <td><?php echo $livro['Editora']?></td>
                         <td><?php echo "<a href='Ops/apagar.php?id=". $livro['ID_Livro']. "'>Apagar</a>"?></td>
+                        <td><?php echo "<a href='att.php?id=". $livro['ID_Livro']. "'>".$livro['ID_Livro'] . "</a>"?></td>
+
                     </tr>
                     <?php endforeach; ?>
                 </tbody>
             </table>
-            <div>
+            <div id="voltaVerLivros">
                 <a href="index.html" id="voltarVerLivros">Voltar à Tela Inicial</a>
             </div>
         </div>

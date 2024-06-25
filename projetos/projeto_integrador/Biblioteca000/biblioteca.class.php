@@ -131,25 +131,41 @@
                 return $rs;
             }
         }
+        function listarUmLivro($id) {
+            $database = new Conexao();
+            $db = $database->getConnection();
 
+            $sql = "SELECT * FROM livro WHERE ID_Livro = :id";
+
+            try {
+                $stmt = $db->query($sql);                                                                                                                                                                                                                                                                                                           
+                $rs = $stmt->fetchAll(PDO::FETCH_ASSOC); //rs = result -> resultado  ::::: fetchAll == ecncapsula realizando o processo concatenativo em todos os itens/objetos presentes no ambiente
+                return $rs;                          
+            } catch(PDOException $e) {
+                echo 'Erro ao listar UM livro: ' . $e->getMessage();
+                $rs = [];
+                return $rs;
+            }
+        }
 
         function updateLivros(){
             $database = new Conexao(); //nova instância da conexao
             $db = $database->getConnection(); // tenta conectar
             
-            // Obtendo os dados atualizados
-            $tituloLivro = $this->getTituloA();
-            $autorLivro = $this->getAutorA();
-            $ISBN = $this->getISBNa();
-            $editora = $this->getEditoraA();
+            $id = $this->getId_Livro();
+            $tituloLivro = $this->getTitulo();
+            $autorLivro = $this->getAutor();
+            $ISBN = $this->getISBN();
+            $editora = $this->getEditora();
             
             
-            // Preparando a consulta SQL
-            $sql = "UPDATE livro SET Nome=:Nome, Autor=:Autor, ISBN=:ISBN, Editora=:Editora";
-        
+           // Preparando a consulta SQL
+            $sql = "UPDATE livro SET Nome=:Nome, Autor=:Autor, ISBN=:ISBN, Editora=:Editora WHERE ID_Livro=:ID_Livro";
+            
             try {
                 // Preparando e executando a consulta
                 $stmt = $db->prepare($sql);
+                $stmt->bindParam(':ID_Livro', $id);
                 $stmt->bindParam(':Nome', $tituloLivro);
                 $stmt->bindParam(':Autor', $autorLivro);
                 $stmt->bindParam(':ISBN', $ISBN);
@@ -172,7 +188,7 @@
             $sql = "SELECT * FROM livro WHERE ID_Livro = :id";
             try {
                 $stmt = $db->prepare($sql);
-                $stmt->bindParam(':id', $id_Livro, PDO::PARAM_INT);
+                $stmt->bindParam(':id', $id, PDO::PARAM_INT);
                 $stmt->execute();
                 return $stmt->fetch(PDO::FETCH_ASSOC);
     
