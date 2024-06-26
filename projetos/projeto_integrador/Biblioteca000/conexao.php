@@ -14,7 +14,7 @@
                 $this->conn = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->db_name, $this->username, $this->password);     
                 $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             }
-            catch(PDOExeption $e) { //se não der certo ele mostra um erro
+            catch(PDOException $e) { //se não der certo ele mostra um erro
                 echo 'Erro de Conexão: ' . $e->getMessage();
             }
         return $this->conn;

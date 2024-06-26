@@ -37,12 +37,16 @@ echo "
                 text-align: center;
                 text-decoration: none;
                 color: black;
+                font-family: monospace;
             }
         </style>
         ";
 //link para o listarPessoas.php
 echo "
         <div class='centralizado'>
+            <div id='sucesso'>
+                <p>Show de Bola!</p>
+            </div>
             <div id='tabelaB'>
                 <a href='../verLivros.php'>Voltar Para Os Registros</a>
             </div>

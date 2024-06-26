@@ -71,4 +71,3 @@
 } else {
     echo "ID não foi fornecido.";
 }
-?>

@@ -17,6 +17,11 @@ if(isset($_GET['ID_Livro'])) {
         <head>
         <title>Atualizar Livro</title>
         <link rel='stylesheet' href='../style.css'>
+        <style>
+            body {
+                font-family: monospace;
+            }
+        </style
         </head>
         <body>
         <h2>Atualizar Pessoa</h2>

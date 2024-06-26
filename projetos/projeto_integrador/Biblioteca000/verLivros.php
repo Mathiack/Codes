@@ -61,7 +61,7 @@
                         <td><?php echo $livro['ISBN']; ?></td>
                         <td><?php echo $livro['Editora']?></td>
                         <td><?php echo "<a href='Ops/apagar.php?id=". $livro['ID_Livro']. "' class='opsTable' id='apagar'>Apagar</a>"?></td>
-                        <td><?php echo "<a href='Ops/att.php?id=". $livro['ID_Livro']. "' class='opsTable' id='atualizar'>".$livro['ID_Livro']. "</a>"?></td>
+                        <td><?php echo "<a href='Ops/att.php?id=". $livro['ID_Livro']. "' class='opsTable' id='atualizar'>Editar</a>"?></td>
 
                     </tr>
                     <?php endforeach; ?>
