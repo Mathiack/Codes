@@ -25,6 +25,7 @@
             <div id="verLivros">
                 <a href="verLivros.php">Ver Livros</a>
             </div>
+            <a href="Cadastro/sair.php" class="btn btn-danger me-5">Sair</a>
         </div>
     </div>
 </body>

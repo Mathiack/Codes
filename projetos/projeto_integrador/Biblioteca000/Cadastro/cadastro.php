@@ -25,8 +25,10 @@ if(isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <style>
+    * {
+        font-family: monospace;
+    }
     body{
-        font-family: Arial, Helvetica, sans-serif;
         background-color: white;
     }
     .telaCad{
@@ -36,7 +38,7 @@ if(isset($_POST['submit'])){
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 50px;
-        border-radius: 15px;
+        border-radius: 10px;
         color: white;
         text-align: center;
     }

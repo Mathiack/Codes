@@ -39,7 +39,7 @@ class Cadastro{
             $stmt->execute();
             return true;
             
-        } catch (PDOExeption $e) {
+        } catch (PDOException $e) {
             echo "Erro ao inserir usuario: " . $e->getMessage();
             return false;
         }

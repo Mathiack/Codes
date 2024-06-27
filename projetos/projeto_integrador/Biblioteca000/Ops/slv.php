@@ -26,11 +26,7 @@ $b->updateLivros();
 //estilo
 echo "
         <style>
-            div.centralizado > div#tabelaB > a {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            div.centralizado > div#tabelaB {
                 background-color: whitesmoke;
                 padding: 20px;
                 border-radius: 10px;
@@ -39,15 +35,23 @@ echo "
                 color: black;
                 font-family: monospace;
             }
+            div.centralizado > div#tabelaB > a {
+                text-decoration: none;
+                color: black;
+            }
+            div.centralizado {
+                 position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         </style>
         ";
 //link para o listarPessoas.php
 echo "
         <div class='centralizado'>
-            <div id='sucesso'>
-                <p>Show de Bola!</p>
-            </div>
             <div id='tabelaB'>
+                <p>Show de Bola!</p>
                 <a href='../verLivros.php'>Voltar Para Os Registros</a>
             </div>
         </div>

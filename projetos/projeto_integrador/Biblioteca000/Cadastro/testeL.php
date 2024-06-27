@@ -32,9 +32,10 @@
     }
     else
     {
+        //se acessar, vem aqui
         $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senha;
-        header('Location: Biblioteca000/index.php');    //redirecionar para a biblioteca pagina inicial
+        header('Location: ../index.php');    //redirecionar para a biblioteca pagina inicial
         }
     }
     else
