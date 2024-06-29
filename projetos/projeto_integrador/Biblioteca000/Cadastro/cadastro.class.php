@@ -1,5 +1,5 @@
 <?php
-include "../conexao.php";
+include_once "conexao.php";
 class Cadastro{
     private $id_usuario;
     private $email;
@@ -39,7 +39,7 @@ class Cadastro{
             $stmt->execute();
             return true;
             
-        } catch (PDOExeption $e) {
+        } catch (PDOException $e) {
             echo "Erro ao inserir usuario: " . $e->getMessage();
             return false;
         }

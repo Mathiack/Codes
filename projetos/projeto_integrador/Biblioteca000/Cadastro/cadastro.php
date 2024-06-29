@@ -2,7 +2,7 @@
 if(isset($_POST['submit'])){
 
 
-    include "../cadastro.class.php";
+    include "cadastro.class.php";
     include_once "conexao.php";
     
         $u = new Cadastro();
@@ -25,9 +25,11 @@ if(isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <style>
+    * {
+        font-family: monospace;
+    }
     body{
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #480001;
+        background-color: white;
     }
     .telaCad{
         background-color: rgba(0, 0, 0, 0.95);
@@ -36,7 +38,7 @@ if(isset($_POST['submit'])){
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 50px;
-        border-radius: 15px;
+        border-radius: 10px;
         color: white;
         text-align: center;
     }

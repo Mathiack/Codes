@@ -7,7 +7,7 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #480001;
+            background-color: white;
         }
         .telaLogin {
             background-color: rgba(0, 0, 0, 0.95);
@@ -63,7 +63,7 @@
                 <h1>Login</h1>
             </div>
             <div class="inputBox">
-                <input type="text" placeholder="E-mail" name="nome" required>
+                <input type="text" placeholder="E-mail" name="email" required>
             </div>
             <div class="inputBox">
                 <input type="password" placeholder="Senha" name="senha" required>
