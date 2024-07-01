@@ -35,7 +35,7 @@
         //se acessar, vem aqui
         $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senha;
-        header('Location: ../index.php');    //redirecionar para a biblioteca pagina inicial
+        header('Location: ../Estante/index.php');    //redirecionar para a biblioteca pagina inicial
         }
     }
     else
