@@ -1,3 +1,6 @@
+<?php
+    include_once "../Cadastro/sessao.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +18,7 @@
 <body>
     <div class="centralizado">
         <?php
-            include "../biblioteca.class.php";
+            include "../Estante/biblioteca.class.php";
 
             if(isset($_GET['id'])) {
                 $id_Livro = $_GET['id'];
@@ -43,7 +46,7 @@
 
         ?>
         <div class='linkVolta'>
-            <a href='../verLivros.php' id=''>Voltar aos Registros</a>
+            <a href='../Estante/verLivros.php' id=''>Voltar aos Registros</a>
         </div>
     </div>
 </body>

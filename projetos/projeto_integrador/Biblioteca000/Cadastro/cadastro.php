@@ -3,7 +3,7 @@ if(isset($_POST['submit'])){
 
 
     include "cadastro.class.php";
-    include_once "conexao.php";
+    include_once "../conexao.php";
     
         $u = new Cadastro();
     
@@ -62,7 +62,7 @@ if(isset($_POST['submit'])){
         
     }
     #submit{
-        background-color: orange;
+        background-color: gray;
         border: none;
         padding: 15px;
         width: 115%;
@@ -72,7 +72,7 @@ if(isset($_POST['submit'])){
         transform: translate(-6%, -20%);
     }
     #submit:hover{
-        background-color: orangered;
+        background-color: rgb(38, 38, 37);
         cursor: pointer;
     }
     </style>

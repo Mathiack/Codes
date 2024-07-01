@@ -1,6 +1,6 @@
 <?php
     // Acessa
-    include_once ('conexao.php');
+    include_once "sessao.php";
     $database = new Conexao(); 
     $db = $database->getConnection();
 

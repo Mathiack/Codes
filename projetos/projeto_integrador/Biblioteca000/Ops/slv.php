@@ -1,7 +1,7 @@
 <?php
 
-include "../biblioteca.class.php";
-
+include_once "../Cadastro/sessao.php";
+include "../Estante/biblioteca.class.php";
 //criação de um objeto ( p )
 $b =  new Biblioteca();
 
@@ -52,7 +52,7 @@ echo "
         <div class='centralizado'>
             <div id='tabelaB'>
                 <p>Show de Bola!</p>
-                <a href='../verLivros.php'>Voltar Para Os Registros</a>
+                <a href='../Estante/verLivros.php'>Voltar Para Os Registros</a>
             </div>
         </div>
     ";

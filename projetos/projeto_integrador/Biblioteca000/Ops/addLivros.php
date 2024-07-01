@@ -1,3 +1,6 @@
+<?php
+    include_once "../Cadastro/sessao.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,7 +23,7 @@
             <h1>Adicionar Livro</h1>
         </div>
         <div class="adicionandoLivro">
-            <form action="../biblioteca.php" method="post">
+            <form action="../Estante/biblioteca.php" method="post">
                 <label for="titulo" id="titulo">
                     <b>Título</b>
                 </label>
@@ -52,7 +55,7 @@
                 <input type="submit" value="Adicionar" id="inputAdd">
             </form>
             <div id="voltarInicio">
-                <a href="../index.php">Voltar à página Inicial</a>
+                <a href="../Estante/index.php">Voltar à página Inicial</a>
             </div>
         </div>
     </div>

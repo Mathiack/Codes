@@ -1,5 +1,8 @@
 <?php
-    include "../biblioteca.class.php";
+
+    include_once "../Cadastro/sessao.php";
+
+    include "../Estante/biblioteca.class.php";
     if(isset($_GET['id'])) {
     $id_livro = $_GET['id'];
     
@@ -32,6 +35,9 @@
                 padding: 20px;
                 border-radius: 10px;
                 text-align: center;
+            }
+            input#nomeA, #autorA, #isbnA, #editoraA {
+                border-radius: 5px;
             }
             input#atualizarBtn {
                 background-color: gray;

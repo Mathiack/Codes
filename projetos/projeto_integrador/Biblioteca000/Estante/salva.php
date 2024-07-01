@@ -1,4 +1,6 @@
 <?php
+include_once "../Cadastro/sessao.php";
+
 
 include "biblioteca.class.php";
 
