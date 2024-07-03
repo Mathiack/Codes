@@ -51,8 +51,8 @@ INSERT INTO `livro` (`ID_Livro`, `ID_User`, `Nome`, `Autor`, `ISBN`, `Editora`) 
 
 CREATE TABLE `usuario` (
   `ID_User` int(11) NOT NULL,
-  `Nome` varchar(255) DEFAULT NULL,
-  `Senha` varchar(255) DEFAULT NULL
+  `email` varchar(255) DEFAULT NULL,
+  `senha` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
