@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +41,7 @@
 <body>
     <section id="acoes">
         <div class="boxHome">
-            <h1>Olá!</h1>
+            <h1>Olá!👋</h1>
             <p>Cadastre-se para registrar seus livros</p>
             <a href="login.php">Login</a>
             <br>

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
+        * {
+            font-family: monospace;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
             background-color: white;
@@ -41,35 +44,59 @@
             
         }
         #submit{
-            background-color: orange;
+            background-color: gray;
             border: none;
             padding: 15px;
-            width: 116%;
+            width: 115%;
             border-radius: 10px;
             color: white;
             font-size: 15px;
             transform: translate(-6%, -20%);
         }
         #submit:hover{
-            background-color: orangered;
+            background-color: rgb(38, 38, 37);
             cursor: pointer;
+        }
+        div#centro {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #voltar {
+            background-color: gray;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            transform: translate(-6%, -20%);
+            text-decoration: none;
+            
+        }
+        .voltar {
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
-    <form action="testeL.php" method="post">
-        <div class="telaLogin">    
+    <div class="telaLogin">  
+        <form action="testeL.php" method="post">
             <div class="h1Text">    
                 <h1>Login</h1>
             </div>
             <div class="inputBox">
-                <input type="text" placeholder="E-mail" name="email" required>
+                <input type="text" placeholder="E-mail ou Nome" name="email" required>
             </div>
             <div class="inputBox">
                 <input type="password" placeholder="Senha" name="senha" required>
             </div>
-            <input type="submit" name="submit" value="enviar">
+            <input type="submit" name="submit" value="Enviar" id="submit">
+        </form>
+        <div class="voltar">
+        <a href="home.php" id="voltar">Voltar</a>
         </div>
-    </form>
+    </div>
 </body>
 </html>

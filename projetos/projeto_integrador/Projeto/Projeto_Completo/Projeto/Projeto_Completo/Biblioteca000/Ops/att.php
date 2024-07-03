@@ -23,6 +23,9 @@ session_start();
         <title>Atualizar Livro</title>
         <link rel='stylesheet' href='../style.css'>
         <style>
+        * {
+            font-family: monospace;
+        }
             body {
                 
             }

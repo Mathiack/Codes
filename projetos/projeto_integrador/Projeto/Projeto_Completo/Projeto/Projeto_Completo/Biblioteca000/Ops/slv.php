@@ -26,6 +26,9 @@ $b->updateLivros();
 //estilo
 echo "
         <style>
+            * {
+                font-family: monospace;
+            }
             div.centralizado > div#tabelaB {
                 background-color: whitesmoke;
                 padding: 20px;

@@ -2,13 +2,16 @@
    session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+        * {
+            font-family: monospace;
+        }
         div.linkST {
             text-decoration: none;
             color: black;
@@ -36,9 +39,9 @@
                 $b->setId_Livro2($id_Livro);
                 echo "<link rel='stylesheet' href='../style.css'>";
                 if ($b->deletarLivros()) {
-                    echo "<div class='link'>Livro apagado com sucesso!</div> <br>";
+                    echo "<div class='link'>Livro apagado com sucesso!🤠👍</div> <br>";
                 } else {
-                    echo "<div class='link'>Erro ao apagar livro.</div> <br>";
+                    echo "<div class='link'>Erro ao apagar livro.👎😔</div> <br>";
                 }
             } else {
                 echo "ID do Livro não fornecido.";

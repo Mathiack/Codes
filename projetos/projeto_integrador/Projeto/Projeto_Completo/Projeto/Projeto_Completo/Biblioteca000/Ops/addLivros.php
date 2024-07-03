@@ -9,6 +9,9 @@
     <title>Adicionar Livros</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+        * {
+            font-family: monospace;
+        }
         input#inputAdd {
             border-radius: 10px;
             color: white;

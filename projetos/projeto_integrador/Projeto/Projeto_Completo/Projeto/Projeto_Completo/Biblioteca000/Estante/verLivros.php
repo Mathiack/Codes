@@ -1,6 +1,5 @@
 <?php
     session_start();
-    
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -10,6 +9,9 @@
     <title>Ver Livros</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+        * {
+            font-family: monospace;
+        }
         a#voltarVerLivros {
             text-decoration: none;
             padding: 5px;
@@ -56,16 +58,17 @@
                         include "biblioteca.class.php";
                         $b = new Biblioteca();
                         $livros = $b->getLivrosByIddoUser($ID_User);
-                        
+                        $numLivros = 0;
                         foreach ($livros as $livro):
+                            $numLivros++;
                     ?>
                     <tr>
                         <td><?php echo $livro['Nome']; ?></td>
                         <td><?php echo $livro['Autor']; ?></td>
                         <td><?php echo $livro['ISBN']; ?></td>
                         <td><?php echo $livro['Editora']?></td>
-                        <td><?php echo "<a href='../Ops/apagar.php?id=". $livro['ID_Livro']. "' class='opsTable' id='apagar'>Apagar</a>"?></td>
-                        <td><?php echo "<a href='../Ops/att.php?id=". $livro['ID_Livro']. "' class='opsTable' id='atualizar'>Editar</a>"?></td>
+                        <td><?php echo "<a href='../Ops/apagar.php?id=". $livro['ID_Livro']. "' class='opsTable' id='apagar'>Apagar🚫</a>"?></td>
+                        <td><?php echo "<a href='../Ops/att.php?id=". $livro['ID_Livro']. "' class='opsTable' id='atualizar'>Editar✏️</a>"?></td>
 
                     </tr>
                     <?php endforeach; ?>
