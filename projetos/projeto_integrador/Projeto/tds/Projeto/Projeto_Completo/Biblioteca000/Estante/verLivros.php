@@ -35,6 +35,10 @@
             border-collapse: collapse;
             padding: 4px;
         }
+        a#cliqueAQ {
+            text-decoration: underline;
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -59,19 +63,31 @@
                         $b = new Biblioteca();
                         $livros = $b->getLivrosByIddoUser($ID_User);
                         $numLivros = 0;
-                        foreach ($livros as $livro):
-                            $numLivros++;
-                    ?>
-                    <tr>
-                        <td><?php echo $livro['Nome']; ?></td>
-                        <td><?php echo $livro['Autor']; ?></td>
-                        <td><?php echo $livro['ISBN']; ?></td>
-                        <td><?php echo $livro['Editora']?></td>
-                        <td><?php echo "<a href='../Ops/apagar.php?id=". $livro['ID_Livro']. "' class='opsTable' id='apagar'>Apagar🚫</a>"?></td>
-                        <td><?php echo "<a href='../Ops/att.php?id=". $livro['ID_Livro']. "' class='opsTable' id='atualizar'>Editar✏️</a>"?></td>
+                        if($numLivros == 0) {
+                            echo "
+                                <p>Você ainda não tem nenhum Livro!<p>
+                                <p><a href='../Ops/addLivros.php' id='cliqueAQ'>Clique aqui</a> para adicionar um livro</p>
+                                ";
+                        }
+                        else {
+                            foreach ($livros as $livro){
+                              $numLivros++;
+                            
+                            ?>
+                                <tr>
+                                    <p>Número de Livros: <?php echo $numLivros?></p>
+                                    <td><?php echo $livro['Nome']; ?></td>
+                                    <td><?php echo $livro['Autor']; ?></td>
+                                    <td><?php echo $livro['ISBN']; ?></td>
+                                    <td><?php echo $livro['Editora']?></td>
+                                    <td><?php echo "<a href='../Ops/apagar.php?id=". $livro['ID_Livro']. "' class='opsTable' id='apagar'>Apagar🚫</a>"?></td>
+                                    <td><?php echo "<a href='../Ops/att.php?id=". $livro['ID_Livro']. "' class='opsTable' id='atualizar'>Editar✏️</a>"?></td>
 
-                    </tr>
-                    <?php endforeach; ?>
+                                </tr>
+                        <?php endforeach;
+                        
+                            }
+                    ?>
                 </tbody>
             </table>
             <div id="voltaVerLivros">
