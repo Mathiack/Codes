@@ -53,16 +53,17 @@
             </div>
                 <?php
                     $numLivros = 0;
+                    ?> <p>Número de Livros: <?php echo $numLivros?></p> <?php
                     foreach ($livros as $book) {
+                            $numLivros++;
                         if($numLivros == 0) {
-                            echo "
-                                <p>Você ainda não tem nenhum Livro!<p>
-                                <p><a href='../Ops/addLivros.php' id='cliqueAQ'>Clique aqui</a> para adicionar um livro</p>
-                                ";
+                        echo "
+                            <p>Você ainda não tem nenhum Livro!<p>
+                            <p><a href='../Ops/addLivros.php' id='cliqueAQ'>Clique aqui</a> para adicionar um livro</p>
+                            ";
                         }
                         else {
-                            $numLivros++;
-                            ?> <p>Número de Livros: <?php echo $numLivros?></p>
+                            ?> 
                                 <thead>
                                     <tr>
                                         <th>Nome</th>
