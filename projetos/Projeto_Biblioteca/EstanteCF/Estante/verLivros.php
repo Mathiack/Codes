@@ -1,5 +1,9 @@
 <?php
     session_start();
+
+    include "biblioteca.class.php";
+    $b = new Biblioteca();
+    $livros = $b->getLivrosByIddoUser($ID_User);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -47,22 +51,9 @@
             <div id="seusLivros">
                 <h1>Livros Adicionados</h1>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Autor</th>
-                        <th>ISBN</th>
-                        <th>Editora</th>
-                        <th colspan="2">Operações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                        include "biblioteca.class.php";
-                        $b = new Biblioteca();
-                        $livros = $b->getLivrosByIddoUser($ID_User);
-                        $numLivros = 0;
+                <?php
+                    $numLivros = 0;
+                    foreach ($livros as $book) {
                         if($numLivros == 0) {
                             echo "
                                 <p>Você ainda não tem nenhum Livro!<p>
@@ -70,24 +61,37 @@
                                 ";
                         }
                         else {
-                            foreach ($livros as $livro){
-                              $numLivros++;
-                            
+                            $numLivros++;
+                            ?> <p>Número de Livros: <?php echo $numLivros?></p>
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Autor</th>
+                                        <th>ISBN</th>
+                                        <th>Editora</th>
+                                        <th colspan="2">Operações</th>
+                                    </tr>
+                                </thead>
+                            <?php
+                            foreach ($livros as $livro){                            
                             ?>
-                                <tr>
-                                    <p>Número de Livros: <?php echo $numLivros?></p>
+                                <table>
+                                <tbody>
+                                    <tr>
+                                    
                                     <td><?php echo $livro['Nome']; ?></td>
                                     <td><?php echo $livro['Autor']; ?></td>
                                     <td><?php echo $livro['ISBN']; ?></td>
                                     <td><?php echo $livro['Editora']?></td>
                                     <td><?php echo "<a href='../Ops/apagar.php?id=". $livro['ID_Livro']. "' class='opsTable' id='apagar'>Apagar🚫</a>"?></td>
                                     <td><?php echo "<a href='../Ops/att.php?id=". $livro['ID_Livro']. "' class='opsTable' id='atualizar'>Editar✏️</a>"?></td>
-
+    
                                 </tr>
-                        <?php endforeach;
-                        
+                        <?php
                             }
-                    ?>
+                        }
+                    } 
+                ?>
                 </tbody>
             </table>
             <div id="voltaVerLivros">
