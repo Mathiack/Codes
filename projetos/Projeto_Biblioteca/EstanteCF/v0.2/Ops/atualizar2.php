@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "../biblioteca.class.php";
 
 if(isset($_GET['ID_Livro'])) {
@@ -18,7 +19,7 @@ if(isset($_GET['ID_Livro'])) {
         <title>Atualizar Livro</title>
         <link rel='stylesheet' href='../style.css'>
         <style>
-            body {
+            * {
                 font-family: monospace;
             }
         </style

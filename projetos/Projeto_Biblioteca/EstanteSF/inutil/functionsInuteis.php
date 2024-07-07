@@ -1,7 +1,7 @@
 <?php 
 function listarUmLivro($id) {
-            $database = new Conexao();
-            $db = $database->getConnection();
+        $database = new Conexao();
+        $db = $database->getConnection();
 
             $sql = "SELECT * FROM livro WHERE ID_Livro = :id";
 

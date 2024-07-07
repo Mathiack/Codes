@@ -11,6 +11,11 @@
             <meta charset="UTF-8">
             <title>Atualizar Livro</title>
             <link rel="stylesheet" href="../style.css">
+            <style>
+                * {
+                    font-family: monospace;
+                }
+            </style>
         </head>
         <body>
             <h2>Atualizar Livro</h2>

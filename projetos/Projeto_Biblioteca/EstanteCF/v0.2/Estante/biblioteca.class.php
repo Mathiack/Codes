@@ -51,7 +51,7 @@
             $this->editora = $editora;
         }
         public function getEditora() {
-                       return $this->editora;
+            return $this->editora;
         }
 
 
