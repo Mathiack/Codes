@@ -25,7 +25,7 @@ if (!isset($_SESSION['ID_User'])) {
 <body>
     <div class="centralizado">
         <h1>Livro Adicionado</h1>
-        <a href="verLivros.php"  id="verLivrosPHP" >Clique aqui para ver os Livros listados</a>
+        <a href="verLivros.php"  id="verLivrosPHP" >👉Clique aqui para ver os Livros listados</a>
     </div>
 <?php 
 

@@ -23,7 +23,7 @@
 <body>
     <div class="centralizado">
         <div class="titulo">
-            <h1>Adicionar Livro</h1>
+            <h1>Adicionar Livro📝</h1>
         </div>
         <div class="adicionandoLivro">
             <form action="../Estante/biblioteca.php" method="post">

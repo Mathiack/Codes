@@ -10,8 +10,6 @@
         * {
             font-family: monospace;
         }
-        body {
-        }
         div.boxHome {
             position: absolute;
             top: 50%;
@@ -42,7 +40,7 @@
     <section id="acoes">
         <div class="boxHome">
             <h1>Olá!👋</h1>
-            <p>Cadastre-se para registrar seus livros</p>
+            <p>Cadastre-se para registrar seus Livros</p>
             <a href="login.php">Login</a>
             <br>
             <br>

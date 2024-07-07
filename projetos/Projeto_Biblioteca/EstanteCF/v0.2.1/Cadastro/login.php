@@ -13,21 +13,21 @@
             background-color: white;
         }
         .telaLogin {
-            background-color: rgba(0, 0, 0, 0.95);
+            background-color: whitesmoke;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             padding: 50px;
             border-radius: 15px;
-            color: white;
+            color: black;
             text-align: center;
         }
         .h1Text h1{
             transform: translate(0%, -50%);
             font-size: 42px;
             text-align: center;
-            color: white;
+            color: black;
         }
         .inputBox{
             margin-bottom: 15px;
@@ -54,7 +54,6 @@
             transform: translate(-6%, -20%);
         }
         #submit:hover{
-            background-color: rgb(38, 38, 37);
             cursor: pointer;
         }
         div#centro {
