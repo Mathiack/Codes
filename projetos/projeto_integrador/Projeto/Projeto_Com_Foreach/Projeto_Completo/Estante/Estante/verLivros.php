@@ -84,8 +84,8 @@
                                     <td><?php echo "<a href='../Ops/att.php?id=". $livro['ID_Livro']. "' class='opsTable' id='atualizar'>Editar✏️</a>"?></td>
 
                                 </tr>
-                        <?php endforeach;
-                        
+                        <?php
+                        }
                             }
                     ?>
                 </tbody>
