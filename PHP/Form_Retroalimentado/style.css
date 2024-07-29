@@ -1,0 +1,18 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(63,63,63);
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section{
+    text-align: center;
+    background-color: white;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
