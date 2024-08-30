@@ -1,10 +1,13 @@
 # Projetos Pessoais
-### Aulas do <a href="https://www.youtube.com/c/CursoemVídeo">Professor Guanabara</a>
-### Aulas do <a href="https://www.youtube.com/@cfbcursos/featured">CFB Cursos</a>
+### <a href="#">Projeto Biblioteca</a>
+## Aulas
+#### Aulas do <a href="https://www.youtube.com/c/CursoemVídeo">Professor Guanabara</a>
+#### Aulas do <a href="https://www.youtube.com/@cfbcursos/featured">CFB Cursos</a>
 
-## Meus Conhecimentos 
-- PHP Intermediário📘
-- JavaScript Iniciante📈
-- Java Intermediário☕
-- HTML e CSS Intermediários🖥🖌
-- SQL Intermediário🛢🧰
+## Linguagens
+- PHP🐘
+- JavaScript🖥
+- Java☕
+- HTML🖌
+- CSS📑
+- SQL🛢
