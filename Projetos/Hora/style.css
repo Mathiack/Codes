@@ -1,0 +1,21 @@
+* {
+    font-family: monospace;
+}
+
+#hora {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    color: rgb(32, 32, 32);
+}
+#data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    padding-bottom: 110px;
+    color: rgb(48, 48, 48);
+}
