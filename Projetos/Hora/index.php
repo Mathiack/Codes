@@ -21,21 +21,36 @@
     </title>
     <link rel="stylesheet" href="style.css">
     <script>
-        function atualizarHora() {
+        function atualizarHora() { //setta a hora e mostra 
             var agora = new Date();
             var horas = agora.getHours().toString().padStart(2, '0');
             var minutos = agora.getMinutes().toString().padStart(2, '0');
             var segundos = agora.getSeconds().toString().padStart(2, '0');
             document.getElementById('hora').innerText = horas + ':' + minutos + ':' + segundos;
         }
-        setInterval(atualizarHora, 1000);
+        setInterval(atualizarHora, 1000); // atualiza a hora a cada segundo
+        function getRandomColor() { // gerador de cores em hexadecimal
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        document.addEventListener('keydown', function(event) { // faz o espaço mudar as background
+            if (event.code === 'Space') {  
+                const randomColor = getRandomColor();
+                document.body.style.backgroundColor = randomColor;
+            }
+        });
     </script>
 </head>
 <body>
     <div id="hora">
         <p>
             <?php
-                echo date('H:i:s');
+                echo date('H:i:s'); // printa a hora
             ?>
         </p>
     </div>
@@ -43,7 +58,7 @@
         <p>
             <?php
                 $data = date('d/m/Y');
-                echo $data;
+                echo $data; // printa a data
             ?>
         </p>
     </div>

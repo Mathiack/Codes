@@ -2,7 +2,11 @@
     font-family: monospace;
 }
 
-#hora {
+body {
+    transition: background-color 0.5s ease; /* transição que muda a cor */
+}
+
+#hora { /* css da hora */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -10,7 +14,7 @@
     font-size: 90px;
     color: rgb(32, 32, 32);
 }
-#data {
+#data { /* css da data */
     position: absolute;
     top: 50%;
     left: 50%;
