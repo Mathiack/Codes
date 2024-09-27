@@ -1,0 +1,30 @@
+* {
+    font-family: monospace;
+}
+
+p#contador {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    padding-bottom: 200px;
+}
+
+p#p1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    padding-bottom: 220px;
+}
+
+p#p2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    padding-top: 50px;
+}
