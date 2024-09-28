@@ -37,7 +37,7 @@ div#voltarInicio > a {
 
 
 
-input#titulo, #autor, #isbn, #editoraB {
+input#titulo, #autor, #isbn, #editoraB, #desc {
     width: 200px;
     height: 30px;
     border-radius: 10px;

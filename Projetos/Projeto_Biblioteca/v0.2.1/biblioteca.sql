@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03/07/2024 às 00:13
+-- Tempo de geração: 28/09/2024 às 13:40
 -- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.2.12
+-- Versão do PHP: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,6 +33,7 @@ CREATE TABLE `livro` (
   `Nome` varchar(255) DEFAULT NULL,
   `Autor` varchar(255) DEFAULT NULL,
   `ISBN` int(11) DEFAULT NULL,
+  `Descricao` varchar(255) NOT NULL,
   `Editora` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -40,8 +41,8 @@ CREATE TABLE `livro` (
 -- Despejando dados para a tabela `livro`
 --
 
-INSERT INTO `livro` (`ID_Livro`, `ID_User`, `Nome`, `Autor`, `ISBN`, `Editora`) VALUES
-(2, NULL, 'sim', 'eu', 32346426, 'minha');
+INSERT INTO `livro` (`ID_Livro`, `ID_User`, `Nome`, `Autor`, `ISBN`, `Descricao`, `Editora`) VALUES
+(2, NULL, 'sim', 'eu', 32346426, '', 'minha');
 
 -- --------------------------------------------------------
 
@@ -54,6 +55,13 @@ CREATE TABLE `usuario` (
   `email` varchar(255) DEFAULT NULL,
   `senha` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Despejando dados para a tabela `usuario`
+--
+
+INSERT INTO `usuario` (`ID_User`, `email`, `senha`) VALUES
+(1, 'example@gmail.com', 'javascript');
 
 --
 -- Índices para tabelas despejadas
@@ -80,13 +88,13 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `livro`
 --
 ALTER TABLE `livro`
-  MODIFY `ID_Livro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID_Livro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `ID_User` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_User` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Restrições para tabelas despejadas

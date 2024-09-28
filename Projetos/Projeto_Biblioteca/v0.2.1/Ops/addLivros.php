@@ -48,6 +48,13 @@
                 <input type="text" name="isbn" id="isbn">
                 <br>
 
+                <label for="desc" id="desc">
+                    <b>Descrição</b>
+                </label>
+                <br>
+                <input type="text" name="desc" id="desc">
+                <br>
+
                 <label for="editoraB" id="editoraB">
                     <b>Editora</b>
                 </label>
