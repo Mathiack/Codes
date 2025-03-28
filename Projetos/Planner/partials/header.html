@@ -1,0 +1,28 @@
+<div class="header">
+    <h1>Planner</h1>
+    <div class="menubar">
+        <div class="menu"><button>File</button>
+            <ul class="submenu">
+                <li onclick="newFile()">New (Ctrl+N)</li>
+                <hr>
+                <li onclick="openFile()">Open (Ctrl+O)</li>
+                <li onclick="saveFile()">Save (Ctrl+S)</li>
+            </ul>
+        </div>
+        <div class="menu"><button>Edit</button>
+            <ul class="submenu">
+                <li onclick="addItem()"><img src="resources/images/add.svg" height="32px"> Add (Ctrl+B)</li>
+                <li onclick="renameItem()">Rename (F2)</li>
+                <li onclick="deleteItem()">Delete (Del)</li>
+                <li onclick="selectAll()">Select all (Ctrl+A)</li>
+                <li onclick="findItem()">Find (Ctrl+F)</li>
+            </ul>
+        </div>
+        <div class="menu"><button>Help</button>
+            <ul class="submenu">
+                <li onclick="about()">About (F1)</li>
+                <li onclick="getHelp()">Get help</li>
+            </ul>
+        </div>
+    </div>
+</div>

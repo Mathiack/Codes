@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Planner</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/partialstyle.css">
+</head>
+<body>
+    <div id="header"></div>
+    <br>
+
+    <div class="document">
+        <div style="height: 90%;">
+
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-evenly; height: 10%;">
+            <button width="25%"><img src="resources/images/add.svg" width="32px"></button>
+            <button width="25%"><img src="resources/images/search.svg" width="32px"></button>
+            <button width="25%"><img src="resources/images/update.svg" width="32px"></button>
+            <button width="25%"><img src="resources/images/delete.svg" width="32px"></button>
+        </div>
+    </div>
+
+    <script src="partials/partial.js"></script>
+    
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey) {
+                switch (event.key.toLowerCase()) {
+                    case 'n': newFile(); break;
+                    case 'o': openFile(); break;
+                    case 's': saveFile(); break;
+                    case 'b': addItem(); break;
+                    case 'a': selectAll(); break;
+                    case 'f': findItem(); break;
+                }
+            } else {
+                switch (event.key) {
+                    case 'F1': about(); event.preventDefault(); break;
+                    case 'F2': renameItem(); break;
+                    case 'Delete': deleteItem(); break;
+                }
+            }
+        });
+        
+        function newFile() { alert('New File'); }
+        function openFile() { alert('Open File'); }
+        function saveFile() { alert('Save File'); }
+        function addItem() { alert('Add Item'); }
+        function renameItem() { alert('Rename Item'); }
+        function deleteItem() { alert('Delete Item'); }
+        function selectAll() { alert('Select All'); }
+        function findItem() { alert('Find Item'); }
+        function about() { alert('About'); }
+        function getHelp() { alert('Get Help'); }
+    </script>
+</body>
+</html>
