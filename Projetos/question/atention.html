@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atenção</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #313131;
+            color: #d8d8d8;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .text-and-image {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            text-align: left;
+            border: 1px solid #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .center {
+            max-width: 500px;
+        }
+
+        .panda img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .mentions {
+            position: absolute;
+            background-color: #424242;
+            border-radius: 10px;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 5px 10px;
+            max-width: 90%;
+        }
+
+        button {
+            background-color: #0D80BF;
+            padding: 8px 16px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .text-and-image {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .panda img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="text-and-image">
+            <!-- Panda à esquerda -->
+            <div class="panda">
+                <img src="img/pandaVermelho.webp" alt="panda">
+            </div>
+            <!-- Texto à direita -->
+            <div class="center">
+                <h1><b><i>Gabrieli, atenção!</i></b></h1>
+                <p>Pense cuidadosamente antes de responder!</p>
+                <p>Saiba que eu não brinco com relacionamentos, é meu e seu dever apoiar um ao outro.</p>
+                <p>Não sei você, mas meu intuito é levar isso muito à frente, talvez até um casamento.</p>
+                <p>Mas não se assuste, se precisar de uns dias para pensar eu entenderei.</p>
+                <button class="next"><a href="question.html"><span class="material-symbols-outlined">arrow_forward</span>Agora sim, vamos lá</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

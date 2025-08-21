@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado🐼</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #313131;
+            color: #d8d8d8;
+            font-family: Arial, sans-serif;
+        }
+
+        span.icon {
+            font-family: 'Material Symbols Outlined';
+            font-size: 20px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .text-and-image {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            text-align: left;
+            border: 1px solid #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .center {
+            max-width: 500px;
+            flex: 1;
+            font-size: 17px;
+        }
+
+        .panda img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .mentions {
+            position: absolute;
+            background-color: #424242;
+            border-radius: 10px;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 5px 10px;
+            max-width: 90%;
+            font-size: 14px;
+        }
+
+        button {
+            background: linear-gradient(130deg, rgba(66, 133, 245, 1) 0%, rgba(235, 68, 54, 1) 50%, rgba(250, 188, 9, 1) 75%, rgba(56, 169, 86, 1) 100%);
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        button:active {
+            transform: scale(0.95);
+            filter: brightness(0.95);
+        }
+
+        button a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .text-and-image {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            .panda img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="text-and-image">
+            <div class="panda">
+                <img src="img/pandaDormindo.jpg" alt="panda">
+            </div>
+            <div class="center">
+                <h1><b><i>Te amo baxinha💗</i></b></h1>
+                <p>Explique o porquê de sua decisão.</p>
+                <p>Se quiser falar presencialmente, pode me chamar (eu adoraria)</p>
+                <button>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=guilhermemathiack@gmail.com" target="_blank">
+                        <span class="icon">mail</span>GMAIL
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

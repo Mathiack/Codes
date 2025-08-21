@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #313131;
+            color: #d8d8d8;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .text-and-image {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            text-align: left;
+            border: 1px solid #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 1000px;
+            width: 100%;
+            position: relative;
+        }
+
+        .center {
+            max-width: 500px;
+            flex: 1;
+            position: relative;
+        }
+
+        .panda img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .mentions {
+            position: absolute;
+            background-color: #424242;
+            border-radius: 10px;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 5px 10px;
+            max-width: 90%;
+        }
+
+        button {
+            background-color: #0D80BF;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .text-and-image {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            .panda img {
+                max-width: 90%;
+                height: auto;
+            }
+
+            button {
+                width: 100%;
+                position: static !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="text-and-image">
+            <div class="center">
+                <h1><b><i>Gabrieli, você quer namorar comigo?</i></b></h1>
+                <a href="final.html"><button class="btn">Sim 💗</button></a>
+                <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)" id="nao">Não 😅</button>
+            </div>
+            <div class="panda">
+                <img src="img/pinguimFofo.png" alt="panda">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function desvia(btn) {
+            btn.style = 'display:none;'
+        }
+    </script>
+</body>
+
+</html>

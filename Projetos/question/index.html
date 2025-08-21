@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+        /* GERAL */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #313131;
+            color: #d8d8d8;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .text-and-image {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            text-align: left;
+            border: 1px solid #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .center {
+            max-width: 500px;
+            flex: 1;
+        }
+
+        .panda img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .mentions {
+            position: absolute;
+            background-color: #424242;
+            border-radius: 10px;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 5px 10px;
+            max-width: 90%;
+            font-size: 14px;
+        }
+
+        /* BOTÃO */
+        button.next {
+            background-color: #0D80BF;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button.next:hover {
+            background-color: #0b6ba1;
+            transform: scale(1.05);
+        }
+
+        button.next:active {
+            transform: scale(0.95);
+        }
+
+        button.next a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        span.material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-size: 20px;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 768px) {
+            .text-and-image {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            button.next {
+                width: 100%;
+                justify-content: center;
+                font-size: 16px;
+            }
+
+            .panda img {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="text-and-image">
+            <div class="center">
+                <h1><b><i>Gabrieli Artuzi</i></b></h1>
+                <p>Há aproximadamente <span id="tempo"></span> eu te conheci</p>
+                <p>Você é uma pessoa incrível e eu sou muito grato por ter você na minha vida.</p>
+                <p>Apesar de você ser meu oposto, somos também iguais</p>
+                <p>Quando eu precisei, você esteve lá para me apoiar</p>
+                <button class="next"><a href="história.html"><span
+                            class="material-symbols-outlined">arrow_forward</span>Vamos continuar</a></button>
+            </div>
+            <div class="panda">
+                <img src="img/panda.jpg" alt="panda">
+            </div>
+        </div>
+    </div>
+    <script>
+        const tempoEl = document.getElementById("tempo");
+        const dataInicio = new Date("2025-02-03T18:50:00");
+
+        function atualizarTempo() {
+            const agora = new Date();
+            let diff = agora - dataInicio;
+
+            if (diff < 0) {
+                tempoEl.textContent = "ainda não nos conhecemos 😢";
+                return;
+            }
+
+            let segundos = Math.floor(diff / 1000);
+            let minutos = Math.floor(segundos / 60);
+            let horas = Math.floor(minutos / 60);
+            let dias = Math.floor(horas / 24);
+            let meses = Math.floor(dias / 30.44); // média
+            dias = dias % Math.floor(30.44);
+            horas = horas % 24;
+            minutos = minutos % 60;
+            segundos = segundos % 60;
+
+            tempoEl.textContent = `${meses} meses, ${dias} dias, ${horas}h ${minutos}min ${segundos}s`;
+        }
+
+        setInterval(atualizarTempo, 1000);
+        atualizarTempo();
+    </script>
+</body>
+
+</html>

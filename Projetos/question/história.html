@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #313131;
+            color: #d8d8d8;
+            font-family: Arial, sans-serif;
+        }
+
+        span.icon {
+            font-family: 'Material Symbols Outlined';
+            font-size: large;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .text-and-image {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            text-align: left;
+            border: 1px solid #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .center {
+            max-width: 500px;
+            flex: 1;
+            font-size: 17px;
+        }
+
+        .panda img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .mentions {
+            position: absolute;
+            background-color: #424242;
+            border-radius: 10px;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 5px 10px;
+            max-width: 90%;
+            font-size: 14px;
+        }
+
+        button {
+            background: #0b6ba1;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        button:active {
+            transform: scale(0.95);
+            filter: brightness(0.95);
+        }
+
+        button a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        span.material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .text-and-image {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            .panda img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="text-and-image">
+            <div class="panda">
+                <img src="img/pandaDormindo.jpg" alt="panda">
+            </div>
+            <div class="center">
+                <h1>História</h1>
+                <p>
+                    Numa noite normal, de um dia normal, de um curso normal, com tudo normal, um simples olhar despertou
+                    uma dúvida em mim.
+                    Era uma linda menina que estudava na minha escola, mas numa turma diferente. Ignorei, ou pelo menos
+                    tentei.
+                    Passado uns dias, um questionamento me foi dirigido também no curso, era algo como:
+                </p>
+                <p>- "Tu 'estuda' lá no Mantovani né?"</p>
+                <p>
+                    Respondi que sim e a conversa foi se desenrolando naturalmente, tanto na escola como no curso.
+                    Inicialmente eu queria ignorar o sentimento de amor que eu sentia, mas não consegui.
+                    O tempo foi passando e eu fui me apaixonando cada vez mais por ela. Não sabia como demonstrar, mas
+                    quando consegui,
+                    ai sim, virou uma função exponencial. Em 2 meses, já estava claro, pelo menos para mim, que eu
+                    gostava dela. Mas não sabia se ela gostava de mim.
+                    Entreatanto, bastou menos de 1 mês para sair de um "eu gosto de você" para abraços, "eu te amo"s e
+                    beijos.
+                </p>
+
+                <button class="next">
+                    <a href="atention.html">
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                        Prossigamos
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
