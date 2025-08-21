@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Versículo</title>
+  <link rel="stylesheet" href="../styles/palette.css" />
+  <link rel="stylesheet" href="../styles/styleVers.css" />
+</head>
+
+<body>
+  <header>
+    <button class="back-button" onclick="window.open('../../index.html', '_self')">
+      <span class="icon-back">arrow_back</span>
+      <p>Voltar</p>
+    </button>
+  </header>
+  <div class="main-content">
+    <div class="title-bar">
+      <div>
+        <h1 id="verse-ref"></h1>
+      </div>
+      <div>
+        <select name="text-version" id="text-version" class="decorated">
+          <option value="almeida">JFA</option>
+          <option value="kjv">King James</option>
+        </select>
+      </div>
+    </div>
+    <p id="verse-text">Carregando versículo...</p>
+    <button id="new-verse" class="button-new-verse">Novo Versículo</button>
+  </div>
+  </div>
+
+  <script defer src="../script/scriptVers.js"></script>
+</body>
+
+</html>

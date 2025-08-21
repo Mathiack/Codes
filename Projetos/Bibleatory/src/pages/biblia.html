@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/palette.css" />
+    <link rel="stylesheet" href="../styles/styleBiblia.css">
+</head>
+
+<body>
+    <header class="decorated">
+        <button class="back-button" onclick="window.open('../../index.html', '_self')">
+            <span class="iconBack">arrow_back</span>
+            <p>Voltar</p>
+        </button>
+        <section class="utility-box">
+            <div class="text-version-box">
+                <select name="text-version" class="decorated" id="text-version">
+                    <option value="almeida">JFA</option>
+                    <option value="kjv">King James</option>
+                </select>
+            </div>
+            <div class="search-box">
+                <span class="iconSearch">search</span>
+                <input type="text" name="search-input-text" class="search-input-text" id="search-input-text"
+                    placeholder="">
+            </div>
+        </section>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li onclick="loadBook('Gênesis')">Gênesis</li>
+                <li onclick="loadBook('Êxodo')">Êxodo</li>
+                <li onclick="loadBook('Levítico')">Levítico</li>
+                <li onclick="loadBook('Números')">Números</li>
+                <li onclick="loadBook('Deuteronômio')">Deuteronômio</li>
+                <li onclick="loadBook('Josué')">Josué</li>
+                <li onclick="loadBook('Juízes')">Juízes</li>
+                <li onclick="loadBook('Rute')">Rute</li>
+                <li onclick="loadBook('1 Samuel')">1 Samuel</li>
+                <li onclick="loadBook('2 Samuel')">2 Samuel</li>
+                <li onclick="loadBook('1 Reis')">1 Reis</li>
+                <li onclick="loadBook('2 Reis')">2 Reis</li>
+                <li onclick="loadBook('1 Crônicas')">1 Crônicas</li>
+                <li onclick="loadBook('2 Crônicas')">2 Crônicas</li>
+                <li onclick="loadBook('Esdras')">Esdras</li>
+                <li onclick="loadBook('Neemias')">Neemias</li>
+                <li onclick="loadBook('Ester')">Ester</li>
+                <li onclick="loadBook('Jó')">Jó</li>
+                <li onclick="loadBook('Salmos')">Salmos</li>
+                <li onclick="loadBook('Provérbios')">Provérbios</li>
+                <li onclick="loadBook('Eclesiastes')">Eclesiastes</li>
+                <li onclick="loadBook('Cantares')">Cantares</li>
+                <li onclick="loadBook('Isaías')">Isaías</li>
+                <li onclick="loadBook('Jeremias')">Jeremias</li>
+                <li onclick="loadBook('Lamentações')">Lamentações</li>
+                <li onclick="loadBook('Ezequiel')">Ezequiel</li>
+                <li onclick="loadBook('Daniel')">Daniel</li>
+                <li onclick="loadBook('Oseias')">Oseias</li>
+                <li onclick="loadBook('Joel')">Joel</li>
+                <li onclick="loadBook('Amós')">Amós</li>
+                <li onclick="loadBook('Obadias')">Obadias</li>
+                <li onclick="loadBook('Jonas')">Jonas</li>
+                <li onclick="loadBook('Miqueias')">Miqueias</li>
+                <li onclick="loadBook('Naum')">Naum</li>
+                <li onclick="loadBook('Habacuque')">Habacuque</li>
+                <li onclick="loadBook('Sofonias')">Sofonias</li>
+                <li onclick="loadBook('Ageu')">Ageu</li>
+                <li onclick="loadBook('Zacarias')">Zacarias</li>
+                <li onclick="loadBook('Malaquias')">Malaquias</li>
+                <li onclick="loadBook('Mateus')">Mateus</li>
+                <li onclick="loadBook('Marcos')">Marcos</li>
+                <li onclick="loadBook('Lucas')">Lucas</li>
+                <li onclick="loadBook('João')">João</li>
+                <li onclick="loadBook('Atos')">Atos</li>
+                <li onclick="loadBook('Romanos')">Romanos</li>
+                <li onclick="loadBook('1 Coríntios')">1 Coríntios</li>
+                <li onclick="loadBook('2 Coríntios')">2 Coríntios</li>
+                <li onclick="loadBook('Gálatas')">Gálatas</li>
+                <li onclick="loadBook('Efésios')">Efésios</li>
+                <li onclick="loadBook('Filipenses')">Filipenses</li>
+                <li onclick="loadBook('Colossenses')">Colossenses</li>
+                <li onclick="loadBook('1 Tessalonicenses')">1 Tessalonicenses</li>
+                <li onclick="loadBook('2 Tessalonicenses')">2 Tessalonicenses</li>
+                <li onclick="loadBook('1 Timóteo')">1 Timóteo</li>
+                <li onclick="loadBook('2 Timóteo')">2 Timóteo</li>
+                <li onclick="loadBook('Tito')">Tito</li>
+                <li onclick="loadBook('Filemom')">Filemom</li>
+                <li onclick="loadBook('Hebreus')">Hebreus</li>
+                <li onclick="loadBook('Tiago')">Tiago</li>
+                <li onclick="loadBook('1 Pedro')">1 Pedro</li>
+                <li onclick="loadBook('2 Pedro')">2 Pedro</li>
+                <li onclick="loadBook('1 João')">1 João</li>
+                <li onclick="loadBook('2 João')">2 João</li>
+                <li onclick="loadBook('3 João')">3 João</li>
+                <li onclick="loadBook('Judas')">Judas</li>
+                <li onclick="loadBook('Apocalipse')">Apocalipse</li>
+            </ul>
+        </aside>
+
+        <main id="chapters-container"></main>
+    </div>
+
+    <script src="../script/scriptBiblia.js"></script>
+</body>
+
+</html>

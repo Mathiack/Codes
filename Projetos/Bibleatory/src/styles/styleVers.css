@@ -1,0 +1,74 @@
+/* css para os versículos aleatórios */
+
+body {
+    background-color: var(--background-color-1);
+    color: var(--font-color-2);
+    font-family: "Ubuntu";
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0px 20px;
+    border-radius: 32px;
+    border: 1px solid #999999;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+
+.back-button:hover {
+    border-radius: 5px;
+}
+
+.icon-back {
+    font-family: "material symbols outlined";
+    font-size: 20px;
+}
+
+.main-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color-2);
+    padding: 20px;
+    border-radius: 15px;
+    width: 960px;
+}
+
+.title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+select.decorated {
+    background-color: var(--background-color-2);
+    color: var(--font-color-2);
+    border: 1px solid #999999;
+    padding: 3px 8px;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.button-new-verse {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    border-radius: 32px;
+    border: 1px solid #999999;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+
+.button-new-verse:hover {
+    border-radius: 5px;
+}

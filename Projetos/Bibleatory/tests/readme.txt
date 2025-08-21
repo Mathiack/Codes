@@ -1,0 +1,1 @@
+please ignore this folder. Only for testing XML and JSON converting for Bible files

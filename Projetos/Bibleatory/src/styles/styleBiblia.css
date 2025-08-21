@@ -1,0 +1,146 @@
+/* css para a Bíblia */
+body {
+    background-color: var(--background-color-1);
+    color: var(--font-color-2);
+    font-family: "Ubuntu";
+}
+
+header.decorated {
+    border-bottom: 1px solid var(--border-color-1);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0px 20px;
+    border-radius: 32px;
+    border: 1px solid #999999;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+
+.back-button:hover {
+    border-radius: 5px;
+}
+
+.iconBack {
+    font-family: "material symbols outlined";
+    font-size: 20px;
+}
+
+.utility-box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.text-version-box {
+    align-items: center;
+}
+
+select.decorated {
+    background-color: var(--background-color-2);
+    color: var(--font-color-2);
+    border: 1px solid #999999;
+    padding: 3px 8px;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 32px;
+    border: 1px solid #999999;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.iconSearch {
+    font-family: "material symbols outlined";
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+.search-input-text {
+    color: white;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    border-right: 1px solid var(--border-color-1);
+    border-radius: 0px 15px 0px 0px;
+    width: 220px;
+    background-color: var(--primary-100);
+    padding: 1rem;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    top: px;
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 6px 0;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 2rem;
+    flex: 1;
+}
+
+
+/*AAAAAAAAAAAAAAAAA*/
+#chapters-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.chapter-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.chapter-btn {
+    padding: 10px 14px;
+    border: none;
+    background-color: #0055aa;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.chapter-btn:hover {
+    background-color: #003f88;
+}

@@ -1,0 +1,266 @@
+{
+    "Gênesis": {
+        "almeida": "Gênesis",
+        "kjv": "Genesis"
+    },
+    "Êxodo": {
+        "almeida": "Êxodo",
+        "kjv": "Exodus"
+    },
+    "Levítico": {
+        "almeida": "Levítico",
+        "kjv": "Leviticus"
+    },
+    "Números": {
+        "almeida": "Números",
+        "kjv": "Numbers"
+    },
+    "Deuteronômio": {
+        "almeida": "Deuteronômio",
+        "kjv": "Deuteronomy"
+    },
+    "Josué": {
+        "almeida": "Josué",
+        "kjv": "Joshua"
+    },
+    "Juízes": {
+        "almeida": "Juízes",
+        "kjv": "Judges"
+    },
+    "Rute": {
+        "almeida": "Rute",
+        "kjv": "Ruth"
+    },
+    "1 Samuel": {
+        "almeida": "1 Samuel",
+        "kjv": "1 Samuel"
+    },
+    "2 Samuel": {
+        "almeida": "2 Samuel",
+        "kjv": "2 Samuel"
+    },
+    "1 Reis": {
+        "almeida": "1 Reis",
+        "kjv": "1 Kings"
+    },
+    "2 Reis": {
+        "almeida": "2 Reis",
+        "kjv": "2 Kings"
+    },
+    "1 Crônicas": {
+        "almeida": "1 Crônicas",
+        "kjv": "1 Chronicles"
+    },
+    "2 Crônicas": {
+        "almeida": "2 Crônicas",
+        "kjv": "2 Chronicles"
+    },
+    "Esdras": {
+        "almeida": "Esdras",
+        "kjv": "Ezra"
+    },
+    "Neemias": {
+        "almeida": "Neemias",
+        "kjv": "Nehemiah"
+    },
+    "Ester": {
+        "almeida": "Ester",
+        "kjv": "Esther"
+    },
+    "Jó": {
+        "almeida": "Jó",
+        "kjv": "Job"
+    },
+    "Salmos": {
+        "almeida": "Salmos",
+        "kjv": "Psalms"
+    },
+    "Provérbios": {
+        "almeida": "Provérbios",
+        "kjv": "Proverbs"
+    },
+    "Eclesiastes": {
+        "almeida": "Eclesiastes",
+        "kjv": "Ecclesiastes"
+    },
+    "Cantares": {
+        "almeida": "Cantares",
+        "kjv": "Song of Solomon"
+    },
+    "Isaías": {
+        "almeida": "Isaías",
+        "kjv": "Isaiah"
+    },
+    "Jeremias": {
+        "almeida": "Jeremias",
+        "kjv": "Jeremiah"
+    },
+    "Lamentações": {
+        "almeida": "Lamentações",
+        "kjv": "Lamentations"
+    },
+    "Ezequiel": {
+        "almeida": "Ezequiel",
+        "kjv": "Ezekiel"
+    },
+    "Daniel": {
+        "almeida": "Daniel",
+        "kjv": "Daniel"
+    },
+    "Oseias": {
+        "almeida": "Oseias",
+        "kjv": "Hosea"
+    },
+    "Joel": {
+        "almeida": "Joel",
+        "kjv": "Joel"
+    },
+    "Amós": {
+        "almeida": "Amós",
+        "kjv": "Amos"
+    },
+    "Obadias": {
+        "almeida": "Obadias",
+        "kjv": "Obadiah"
+    },
+    "Jonas": {
+        "almeida": "Jonas",
+        "kjv": "Jonah"
+    },
+    "Miqueias": {
+        "almeida": "Miqueias",
+        "kjv": "Micah"
+    },
+    "Naum": {
+        "almeida": "Naum",
+        "kjv": "Nahum"
+    },
+    "Habacuque": {
+        "almeida": "Habacuque",
+        "kjv": "Habakkuk"
+    },
+    "Sofonias": {
+        "almeida": "Sofonias",
+        "kjv": "Zephaniah"
+    },
+    "Ageu": {
+        "almeida": "Ageu",
+        "kjv": "Haggai"
+    },
+    "Zacarias": {
+        "almeida": "Zacarias",
+        "kjv": "Zechariah"
+    },
+    "Malaquias": {
+        "almeida": "Malaquias",
+        "kjv": "Malachi"
+    },
+    "Mateus": {
+        "almeida": "Mateus",
+        "kjv": "Matthew"
+    },
+    "Marcos": {
+        "almeida": "Marcos",
+        "kjv": "Mark"
+    },
+    "Lucas": {
+        "almeida": "Lucas",
+        "kjv": "Luke"
+    },
+    "João": {
+        "almeida": "João",
+        "kjv": "John"
+    },
+    "Atos": {
+        "almeida": "Atos",
+        "kjv": "Acts"
+    },
+    "Romanos": {
+        "almeida": "Romanos",
+        "kjv": "Romans"
+    },
+    "1 Coríntios": {
+        "almeida": "1 Coríntios",
+        "kjv": "1 Corinthians"
+    },
+    "2 Coríntios": {
+        "almeida": "2 Coríntios",
+        "kjv": "2 Corinthians"
+    },
+    "Gálatas": {
+        "almeida": "Gálatas",
+        "kjv": "Galatians"
+    },
+    "Efésios": {
+        "almeida": "Efésios",
+        "kjv": "Ephesians"
+    },
+    "Filipenses": {
+        "almeida": "Filipenses",
+        "kjv": "Philippians"
+    },
+    "Colossenses": {
+        "almeida": "Colossenses",
+        "kjv": "Colossians"
+    },
+    "1 Tessalonicenses": {
+        "almeida": "1 Tessalonicenses",
+        "kjv": "1 Thessalonians"
+    },
+    "2 Tessalonicenses": {
+        "almeida": "2 Tessalonicenses",
+        "kjv": "2 Thessalonians"
+    },
+    "1 Timóteo": {
+        "almeida": "1 Timóteo",
+        "kjv": "1 Timothy"
+    },
+    "2 Timóteo": {
+        "almeida": "2 Timóteo",
+        "kjv": "2 Timothy"
+    },
+    "Tito": {
+        "almeida": "Tito",
+        "kjv": "Titus"
+    },
+    "Filemom": {
+        "almeida": "Filemom",
+        "kjv": "Philemon"
+    },
+    "Hebreus": {
+        "almeida": "Hebreus",
+        "kjv": "Hebrews"
+    },
+    "Tiago": {
+        "almeida": "Tiago",
+        "kjv": "James"
+    },
+    "1 Pedro": {
+        "almeida": "1 Pedro",
+        "kjv": "1 Peter"
+    },
+    "2 Pedro": {
+        "almeida": "2 Pedro",
+        "kjv": "2 Peter"
+    },
+    "1 João": {
+        "almeida": "1 João",
+        "kjv": "1 John"
+    },
+    "2 João": {
+        "almeida": "2 João",
+        "kjv": "2 John"
+    },
+    "3 João": {
+        "almeida": "3 João",
+        "kjv": "3 John"
+    },
+    "Judas": {
+        "almeida": "Judas",
+        "kjv": "Jude"
+    },
+    "Apocalipse": {
+        "almeida": "Apocalipse",
+        "kjv": "Revelation"
+    }
+}

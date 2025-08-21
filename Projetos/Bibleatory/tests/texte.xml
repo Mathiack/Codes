@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<usfx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="usfx.xsd">
+    <book>
+        <h>Genesis</h>
+        <c id="1" />
+        <v id="1" /> In the beginning God created the heaven and the earth.<ve />
+        <!-- demais versículos-->
+        <!-- demais capítulos -->
+    </book>
+    <!-- demais livros    -->
